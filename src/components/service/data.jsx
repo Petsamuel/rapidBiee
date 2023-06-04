@@ -1,18 +1,18 @@
 import { Configuration, OpenAIApi } from 'openai'
 
 export const services = [{
-    logo: "",
-    keyword: "KeyWords",
+
+    name: "KeyWords",
     description: "Extract Keyword from a block of text"
 },
 {
-    logo: "",
-    keyword: "Grammer Correction",
+
+    name: "Grammer Correction",
     description: "Extract Keyword from a block of text"
 },
 {
-    logo: "",
-    keyword: "Eassy Outline",
+
+    name: "Eassy Outline",
     description: "Extract Keyword from a block of text"
 }]
 

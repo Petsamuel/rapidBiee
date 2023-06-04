@@ -3,24 +3,27 @@ export const Header = () => {
     const menuList = ["Home", "About", "Contact"]
     return (
         <Fragment>
-            <section className=" position flex w-full shadow-md">
-                <nav className="flex justify-around my-8 w-full">
-                    <div>
-                        {/* logo */}
-                        <div><a href="/" className="logoFont  text-4xl">RapidBiee</a></div>
-                    </div>
-                    <div>
-                        {/* menu */}
-                        <div className='flex '>
-                            {menuList.map((index, key) => (
-                                <a key={key} className="px-5 cursor-pointer hover:text-teal-200">{index}</a>
-                            ))}
+            <section className="relative w-full">
+                <div className=' flex w-full shadow-sm'>
+                    <nav className="flex justify-around my-6 w-full items-center">
+                        <div>
+                            {/* logo */}
+                            <div><a href="/" className="logoFont text-4xl">RapidBiee</a></div>
                         </div>
-                    </div>
-                    <div>
-                        {/* hamburger */}
-                    </div>
-                </nav>
+                        <ul className='relative'>
+                            {/* menu */}
+                            <li className='flex '>
+                                {menuList.map((index, key) => (
+                                    <a key={key} className="px-5 cursor-pointer hover:text-teal-200">{index}</a>
+                                ))}
+                            </li>
+                        </ul>
+                        <div>
+                            RxHamburgerMenu
+                        </div>
+                    </nav>
+                </div>
+
             </section>
         </Fragment>
     )
