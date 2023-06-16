@@ -1,8 +1,7 @@
 #user > li {
-  border: 2px solid rgb(168, 164, 164);
+  border: 1px solid rgb(168, 164, 164);
   padding: 20px;
   margin: 10px;
   border-radius: 1rem;
   cursor: pointer;
-  
 }
